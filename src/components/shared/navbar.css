@@ -1,0 +1,35 @@
+nav {
+  padding: 0.6%;
+  box-shadow: 0 2px 8px black;
+  background-color: var(--nav-bg) !important;
+}
+
+.width-container {
+  width: 80%;
+  margin: auto;
+}
+.nav-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1%;
+}
+.logo {
+  width: 20 rem;
+  height: 1rem;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 0% !important;
+}
+.nav-links > li {
+  display: list-item;
+}
+
+.nav-links > li > a {
+  color: #000;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
