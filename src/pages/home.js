@@ -3,7 +3,8 @@ import CocktailsList from "../components/cocktalsList/Cocktails";
 const Home = () => {
   return (
     <>
-      <Search />
+      <Search className="srch-comp" />
+
       <CocktailsList />
     </>
   );

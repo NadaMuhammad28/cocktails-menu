@@ -15,13 +15,13 @@ const CocktailsList = () => {
   //   return <NoMatch />;
   // }
   return (
-    <section className="pt-5 drinksList">
-      <div className="width-container">
+    <section className=" ">
+      <div className=" width-container">
         {isLoading && <Loading />}
         {drinksList.length === 0 && <NoMatch />}
 
         <h1>Cocktails</h1>
-        <div className="">
+        <div className="mt-4">
           <div className="row gx-5 ">
             {drinksList &&
               drinksList.map((drink) => {

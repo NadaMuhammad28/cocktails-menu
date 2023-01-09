@@ -37,7 +37,7 @@
   --primaryDarkColor: #476a2e;
   --main-bg: #222;
   --all-txt-clr: #f7f7f7;
-  --nav-bg: #9daf70;
+  --nav-bg: #d4e6a5;
 }
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -257,9 +257,25 @@ Cocktail
   }
 }
 /*search*/
+.search-form {
+  width: 30%;
+  z-index: 0;
+  display: inline-block;
+  background-color: var(--nav-bg);
+  padding: 1%;
+  box-shadow: var(--darkShadow);
+  margin-top: 6%;
+  margin-bottom: 3%;
+  border-radius: 0.3rem;
+}
+.search-form > input {
+  width: 100%;
+  padding: 1%;
+  border-radius: 0.3rem;
+  border: none;
+  background-color: #fff;
+}
 .search-container {
-  /* display: block;
-  margin-bottom: 2%;
-  text-align: right;
-  position: fixed; */
+  text-align: left;
+  width: 100%;
 }

@@ -1,6 +1,3 @@
-.drinksList {
-  position: relative;
-}
 .drink-container {
   padding: 0 !important;
   margin-bottom: 15%;
@@ -51,4 +48,7 @@
 .drink-details h4,
 .drink-details p {
   margin-bottom: 0.3rem;
+}
+.cocktails-container {
+  position: relative;
 }

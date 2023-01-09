@@ -17,7 +17,13 @@ const DarkMode = () => {
   }, [theme]);
   return (
     <>
-      <input type="checkbox" id="drk-btn" ref={rre} onChange={toggleTheme} />
+      <input
+        className="theme-input"
+        type="checkbox"
+        id="drk-btn"
+        ref={rre}
+        onChange={toggleTheme}
+      />
       <label for="drk-btn"></label>
     </>
   );

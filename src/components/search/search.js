@@ -14,19 +14,16 @@ const Search = () => {
     setSearchTerm(SearchRef.current.value);
   };
   return (
-    <section className="search-container">
-      <form onSubmit={handleSubmit}>
+    <div className=" width-container search-container">
+      <form onSubmit={handleSubmit} className="search-form">
         <input
           type="text"
           placeholder="Serch for.."
           ref={SearchRef}
           onChange={handleSearch}
         />
-        <button>
-          <FaSearch />
-        </button>
       </form>
-    </section>
+    </div>
   );
 };
 
