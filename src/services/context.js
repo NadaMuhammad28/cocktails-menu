@@ -12,8 +12,8 @@ const AppContext = ({ children }) => {
     setIsLoading(true);
     try {
       const res = await fetch(`${url}${searchTerm}`);
-      const { drinks } = await res.json();
-
+      let { drinks } = await res.json();
+      drinks.splice(drinks.length - 1, 1);
       setDrinksList(drinks);
       if (!drinks) setDrinksList([]);
       setIsLoading(false);
@@ -37,7 +37,6 @@ const AppContext = ({ children }) => {
         index++;
         prop = `strIngredient${index}`;
       }
-      console.log(ingredients);
       setSingleDrink({
         id: drink.idDrink,
         title: drink.strDrink,
