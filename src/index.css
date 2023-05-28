@@ -61,14 +61,16 @@ code {
     monospace;
 }
 body::-webkit-scrollbar {
-  width: 0.8em;
+  width: 1em;
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: var(--scroll-thumb) !important;
+  width: 0.5em !important;
 }
 ::-webkit-scrollbar-track {
   background-color: var(--scroll-tack) !important;
+  padding: 0 1rem !important;
 }
 h1,
 h2,
